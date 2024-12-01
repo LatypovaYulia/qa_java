@@ -23,7 +23,6 @@ public class LionMockTest {
         assertEquals("Количество котят не равно 1", expectedResult, actualResult);
     }
 
-
     @Test
     public void getFoodAnimalKindReturnFoodTest() throws Exception {
         Lion lion = new Lion(felineMock);

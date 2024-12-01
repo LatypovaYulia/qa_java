@@ -23,7 +23,6 @@ public class CatMockTest {
         assertEquals("Фактический результат не вывел значение: " + expectedResult, expectedResult, actualResult);
     }
 
-
     @Test
     public void getFoodReturnsCorrectFoodTest() throws Exception {
         Cat cat = new Cat(felineMock);
@@ -37,3 +36,5 @@ public class CatMockTest {
 
 
 }
+
+
