@@ -19,7 +19,6 @@ public class LionMockTest {
         int expectedResult = 1;
         Mockito.when(felineMock.getKittens()).thenReturn(1);
         int actualResult = lion.getKittens();
-        System.out.println("actualResult = " + actualResult);
         assertEquals("Количество котят не равно 1", expectedResult, actualResult);
     }
 
@@ -29,7 +28,6 @@ public class LionMockTest {
         List<String> expectedResult = List.of("Животные", "Птицы", "Рыба");
         Mockito.when(felineMock.getFood("Хищник")).thenReturn(List.of("Животные", "Птицы", "Рыба"));
         List<String> actualResult = lion.getFood();
-        System.out.println("actualResult = " + actualResult);
         assertEquals("Фактический результат не вывел список: " + expectedResult, expectedResult, actualResult);
     }
 }
